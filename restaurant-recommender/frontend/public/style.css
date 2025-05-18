@@ -1,0 +1,6 @@
+body { font-family: Arial, sans-serif; margin: 2rem; }
+.container { max-width: 1200px; margin: 0 auto; }
+.filters { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 2rem; }
+input, select { padding: 0.8rem; border: 1px solid #ddd; border-radius: 4px; }
+button { background: #2c3e50; color: white; cursor: pointer; }
+.restaurant-card { background: #f9f9f9; padding: 1rem; margin: 1rem 0; border-radius: 8px; }
