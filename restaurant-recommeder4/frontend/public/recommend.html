@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Restaurants</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Restaurant Finder</h1>
+        <button onclick="window.location.href='/'">Home</button>
+        <div class="filters">
+            <input type="text" id="cuisine" placeholder="Preferred Cuisine" required>
+            <select id="price_range">
+                <option value="">Any Price</option>
+                <option value="$">$</option>
+                <option value="$$">$$</option>
+                <option value="$$$">$$$</option>
+                <option value="$$$$">$$$$</option>
+            </select>
+            <input type="number" id="rating" placeholder="Min. Rating" step="0.1" min="1" max="5">
+            <button onclick="getRecommendations()">Find Restaurants</button>
+        </div>
+        <div id="results"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
