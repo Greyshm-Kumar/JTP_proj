@@ -16,7 +16,7 @@ Go through the list thoroughly to check if all these ports are free. Thank you.
 
 For running the project just clone the repository on your local machine. Then go into the command prompt and enter the **restaurant-recommender7 directory**. After you are in the directory run the command **docker-compose up --build**.  The project is plug and play and you do not have to install any dependencies. 
 
-After the build is completed just go to http://localhost:3000(http://localhost:3001 if you are using restaurant-recommeder8) to access the UI. This will land you on the homepage which will look like this:
+After the build is completed just go to http://localhost:3000 (http://localhost:3001 if you are using restaurant-recommeder8) to access the UI. This will land you on the homepage which will look like this:
 
 ![Screenshot(204).png](https://github.com/Greyshm-Kumar/JTP_proj/blob/main/JTP_Screenshots/Screenshot%20(204).png?raw=true)
 
