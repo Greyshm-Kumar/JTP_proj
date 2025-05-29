@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Search Restaurants</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="flags.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Restaurant Finder</h1>
+        <button onclick="window.location.href='/'">Home</button>
+        <div class="filters">
+            <select id="cuisine" required>
+                <option value="">Select Cuisine</option>
+                <option value="American">American</option>
+                <option value="Brazilian">Brazilian</option>
+                <option value="Caribbean">Caribbean</option>
+                <option value="Chinese">Chinese</option>
+                <option value="French">French</option>
+                <option value="German">German</option>
+                <option value="Greek">Greek</option>
+                <option value="Indian">Indian</option>
+                <option value="Italian">Italian</option>
+                <option value="Japanese">Japanese</option>
+                <option value="Korean">Korean</option>
+                <option value="Lebanese">Lebanese</option>
+                <option value="Mediterranean">Mediterranean</option>
+                <option value="Mexican">Mexican</option>
+                <option value="Moroccan">Moroccan</option>
+                <option value="Peruvian">Peruvian</option>
+                <option value="Spanish">Spanish</option>
+                <option value="Thai">Thai</option>
+                <option value="Turkish">Turkish</option>
+                <option value="Vietnamese">Vietnamese</option>
+            </select>
+            <select id="price_range">
+                <option value="">Any Price</option>
+                <option value="$">$ Budget</option>
+                <option value="$$">$$ Moderate</option>
+                <option value="$$$">$$$ Expensive</option>
+                <option value="$$$$">$$$$ Luxury</option>
+            </select>
+            <input type="number" id="rating" placeholder="Min. Rating(1 to 5)" step="0.1" min="1" max="5">
+            <button onclick="getRecommendations()">Find Restaurants</button>
+        </div>
+        <div id="results"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
