@@ -18,28 +18,38 @@ For running the project just clone the repository on your local machine. Then go
 
 After the build is completed just go to http://localhost:3000(http://localhost:3001 if you are using restaurant-recommeder8) to access the UI. This will land you on the homepage which will look like this:
 
-
-
+![Screenshot(204).png](https://github.com/Greyshm-Kumar/JTP_proj/blob/main/JTP_Screenshots/Screenshot%20(204).png?raw=true)
 
 This is the homepage for the project. For example,the page will look somewhat like this:
 
-
+![Screenshot(205).png](https://github.com/Greyshm-Kumar/JTP_proj/blob/main/JTP_Screenshots/Screenshot%20(205).png?raw=true)
 
 Next on the homepage you also have an option for searching the restaurants yourself.When you click on that page it will take you to a page where you can input your preferences and it will accordingly recommend restaurants based on your preferences.The search page looks like this:
 
+![Screenshot(206).png](https://github.com/Greyshm-Kumar/JTP_proj/blob/main/JTP_Screenshots/Screenshot%20(206).png?raw=true)
+
 You can put some preferences and it will return results based on that. There are drop down menus for Cuisine and Price range.
 
+![Screenshot(207).png](https://github.com/Greyshm-Kumar/JTP_proj/blob/main/JTP_Screenshots/Screenshot%20(207).png?raw=true)
 
+![Screenshot(208).png](https://github.com/Greyshm-Kumar/JTP_proj/blob/main/JTP_Screenshots/Screenshot%20(208).png?raw=true)
 
 
 In the price range you can manually enter the MINIMUM RATING for your preferences. Then click on Find Restaurants button and it will load the best possible restaurants that match your criteria. It will look like this:
 
 
 
+![Screenshot(209).png](https://github.com/Greyshm-Kumar/JTP_proj/blob/main/JTP_Screenshots/Screenshot%20(209).png?raw=true)
 
+![Screenshot(210).png](https://github.com/Greyshm-Kumar/JTP_proj/blob/main/JTP_Screenshots/Screenshot%20(210).png?raw=true)
 
+![Screenshot(211).png](https://github.com/Greyshm-Kumar/JTP_proj/blob/main/JTP_Screenshots/Screenshot%20(211).png?raw=true)
 
 You can choose any of these options and it will give you all the information about the particular restaurant:
+
+
+![Screenshot(212).png](https://github.com/Greyshm-Kumar/JTP_proj/blob/main/JTP_Screenshots/Screenshot%20(212).png?raw=true)
+
 
 Note:The addresses and websites are fake.
 
