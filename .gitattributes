@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *.zip filter=lfs diff=lfs merge=lfs -text
 *.jpg filter=lfs diff=lfs merge=lfs -text
 *.png filter=lfs diff=lfs merge=lfs -text
@@ -7,3 +8,6 @@
 *.h5 filter=lfs diff=lfs merge=lfs -text
 *.bin filter=lfs diff=lfs merge=lfs -text
 *.gz filter=lfs diff=lfs merge=lfs -text
+=======
+restaurant-recommender-offline filter=lfs diff=lfs merge=lfs -text
+>>>>>>> 0392353af5c9fe53603efb2ee6392dc6e8ce5ab5
