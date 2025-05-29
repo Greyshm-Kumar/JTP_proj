@@ -16,7 +16,7 @@ Go through the list thoroughly to check if all these ports are free. Thank you.
 
 <h1>Installation</h1>
 
-For running the project just clone the repository on your local machine. Then go into the command prompt and enter the **restaurant-recommender7 directory**. After you are in the directory run the command **docker-compose up --build**.  The project is plug and play and you do not have to install any dependencies. 
+For running the project just clone the repository on your local machine. Then go into the command prompt and enter the **restaurant-recommender7 directory**. After you are in the directory run the command **docker-compose up --build**.  The project is plug and play and you do not have to install any dependencies. For understanding the code **restaurant_recommender7_labeled** has been created and this version has modular and well commented code for ease of understanding. 
 
 <h1>How to operate</h1>
 
