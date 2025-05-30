@@ -12,7 +12,7 @@ Go through the list thoroughly to check if all these ports are free. Thank you.
 
 **The final commits of this project are** **restaurant-recommender8 and restaurant-recommender-offline**. All other commits were done while the project was still in the development phase.
 
-**If you have any of the above-mentioned ports occupied and you do not want to kill the process a restaurant-recommender8 has been created which contains ports 3001,81,5001 and 5432**. These ports are generally uncommon but make sure that none of the processes on your machine are occupying these ports otherwise port issues may be caused.**Make sure port 5001 for your docker containers is also free.** **You will need internet access to run restaurant-recommender8.**
+**If you have any of the above-mentioned ports occupied and you do not want to kill the process a restaurant-recommender8 has been created which uses ports 3001,81,5001 and 5432**. These ports are generally uncommon but make sure that none of the processes on your machine are occupying these ports otherwise port issues may be caused.**Make sure port 5001 for your docker containers is also free.** **You will need internet access to run restaurant-recommender8.**
 
 Clone this repository on your machine first. This will require internet access.
 
@@ -20,15 +20,27 @@ Clone this repository on your machine first. This will require internet access.
 
 **Please make sure that your docker-desktop(docker-daemon) is running otherwise building the images is not possible.**
 
+<h3>With Internet Access(Recommended)</h3>
+
+The internet access is only used for pulling base docker images and getting packaged dependencies.
+
+This method is much simpler. You do not need git lfs in your system for this. You can clone the repository normally and it will work.This will work cross platform for all operating systems.
+
+Go into the command prompt and enter the **restaurant-recommender8 directory**. After you are in the directory run the command **docker-compose up --build**.  The project is plug and play and you do not have to install any dependencies. For understanding the code **restaurant_recommender7_labeled** has been created and this version has **modular and well commented code** for ease of understanding. This will need internet access for pulling base images from Docker.
+
+After the build is completed just go to http://localhost:3001 to access the UI.
+
 <h3>Without Internet Access(Not recommended for Mac)</h3>
 
-The reason you cannot use this on mac is because we have packaged the dependencies as wheel files in the **wheelhouse folder** inside the **restaurant-recommender-offline/backend** folder.Therefore,pip does not install it using internet. Wheel files generated on Windows (my OS) are only compatible with windows OS systems. This is why we need to install dependencies on the go during build which is possible in the second method(with internet access) because there pip will automatically install the required dependencies compatible with your OS.
+Here all of the base docker images have been packaged in **.tar** file format and all the dependencies have been packaged as wheel files. This is why you do not require internet access for this installation.
+
+Use **git lfs clone** instead of **git clone** while cloning the repo. This is because all the base images and dependencies have been packaged using LFS(Large File Storage).These files are generally much larger in size.
+
+After cloning the repository go in the **restaurant-recommender-offline** directory.This is a large file as all the base images have been included inside the file in .tar file formats already and all dependencies have been packaged inside it so it can run smoothly without installing anything.
+
+The reason you cannot use this on mac is because the dependencies have been packaged as wheel files in the **wheelhouse folder** inside the **restaurant-recommender-offline/backend** folder.Therefore,**pip** does not install it using internet. Wheel files generated on Windows (my OS) are only compatible with windows OS systems. This is why we need to install dependencies on the go during the build which is possible in the first method(with internet access) because there pip will automatically install the required dependencies compatible with your OS.
 
 **You need git lfs(large file storage) on your system for this because offline files are much larger and hence lfs was used to upload them.**
-
-Use **git lfs clone** instead of **git clone** while cloning the repo.
-
-After cloning the repository go in the **restaurant-recommender-offline** directory. This is a large file as all the base images have been included inside the file in .tar file formats already and all dependencies have been packaged inside it so it can run smoothly without installing anything.
 
 Here you will have to run a few commands to first load the base images on the docker daemon before utilizing them.
 
@@ -56,19 +68,14 @@ This is an example of running the containers offline. You can see in the bottom 
 
 ![CommandUi2.png](https://github.com/Greyshm-Kumar/JTP_proj/blob/main/JTP_Screenshots/CommandUi2.png)
 
-<h3>With Internet Access(Recommended)</h3>
-
-This method is much simpler. You do not need git lfs in your system for this. You can clone the repository normally and it will work.This will work cross platform for all operating systems.
-
-Go into the command prompt and enter the **restaurant-recommender8 directory**. After you are in the directory run the command **docker-compose up --build**.  The project is plug and play and you do not have to install any dependencies. For understanding the code **restaurant_recommender7_labeled** has been created and this version has **modular and well commented code** for ease of understanding. This will need internet access for pulling base images from Docker.
 
 <h1>How to operate</h1>
 
-After the build is completed just go to http://localhost:3001 to access the UI. This will land you on the homepage which will look like this:
+After the build is completed and you access the UI ,the homepage will look like this:
 
 ![Screenshot(204).png](https://github.com/Greyshm-Kumar/JTP_proj/blob/main/JTP_Screenshots/Screenshot%20(204).png?raw=true)
 
-This is the homepage for the project. For example,the page will look somewhat like this:
+This is the homepage for the project. For example,the restaurant page will look somewhat like this:
 
 ![Screenshot(205).png](https://github.com/Greyshm-Kumar/JTP_proj/blob/main/JTP_Screenshots/Screenshot%20(205).png?raw=true)
 
