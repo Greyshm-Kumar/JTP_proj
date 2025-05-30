@@ -39,6 +39,7 @@ These 3 commands will load the images on your docker daemon.
 After this run the following commands to get your system up and running:
 
 **docker-compose build**
+
 **docker-compose up**
 
 Visit http://localhost:3000 after this to access the UI. In this way you can run the whole system without internet access as well.
