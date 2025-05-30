@@ -22,6 +22,10 @@ Clone this repository on your machine first. This will require internet access.
 
 <h3>Without Internet Access</h3>
 
+**You need git lfs(large file storage) on your system for this because offline files are much larger and hance lfs was used to upload them.**
+
+Use **git lfs clone** instead of **git clone** while cloning the repo.
+
 After cloning the repository go in the **restaurant-recommender-offline** directory. This is a large file as all the base images have been included inside the file in .tar file formats already and all dependencies have been packaged inside it so it can run smoothly without installing anything.
 
 Here you will have to run a few commands to first load the base images on the docker daemon before utilizing them.
@@ -46,11 +50,11 @@ Visit http://localhost:3000 after this to access the UI. In this way you can run
 
 <h3>With Internet Access</h3>
 
-Go into the command prompt and enter the **restaurant-recommender7 directory**. After you are in the directory run the command **docker-compose up --build**.  The project is plug and play and you do not have to install any dependencies. For understanding the code **restaurant_recommender7_labeled** has been created and this version has **modular and well commented code** for ease of understanding. This will need internet access for pulling base images from Docker.
+Go into the command prompt and enter the **restaurant-recommender8 directory**. After you are in the directory run the command **docker-compose up --build**.  The project is plug and play and you do not have to install any dependencies. For understanding the code **restaurant_recommender7_labeled** has been created and this version has **modular and well commented code** for ease of understanding. This will need internet access for pulling base images from Docker.
 
 <h1>How to operate</h1>
 
-After the build is completed just go to http://localhost:3000 (http://localhost:3001 if you are using restaurant-recommeder8) to access the UI. This will land you on the homepage which will look like this:
+After the build is completed just go to http://localhost:3001 to access the UI. This will land you on the homepage which will look like this:
 
 ![Screenshot(204).png](https://github.com/Greyshm-Kumar/JTP_proj/blob/main/JTP_Screenshots/Screenshot%20(204).png?raw=true)
 
