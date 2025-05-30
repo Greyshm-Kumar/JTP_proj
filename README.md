@@ -20,7 +20,9 @@ Clone this repository on your machine first. This will require internet access.
 
 **Please make sure that your docker-desktop(docker-daemon) is running otherwise building the images is not possible.**
 
-<h3>Without Internet Access</h3>
+<h3>Without Internet Access(Not recommended for Mac)</h3>
+
+The reason you cannot use this on mac is because we have packaged the dependencies as wheel files in the project folder so pip does not install it using internet. Wheel files generated on Windows (my OS) are only compatible with windows OS systems. This is why we need to install dependencies on the go during build which is possible in the second method(with internet access) because there pip will automatically install the required dependencies compatible with your OS.
 
 **You need git lfs(large file storage) on your system for this because offline files are much larger and hence lfs was used to upload them.**
 
@@ -56,7 +58,7 @@ This is an example of running the containers offline. You can see in the bottom 
 
 <h3>With Internet Access(Recommended)</h3>
 
-This method is much simpler. You do not need git lfs in your system for this. You can clone the repository normally and it will work.
+This method is much simpler. You do not need git lfs in your system for this. You can clone the repository normally and it will work.This will work cross platform for all operating systems.
 
 Go into the command prompt and enter the **restaurant-recommender8 directory**. After you are in the directory run the command **docker-compose up --build**.  The project is plug and play and you do not have to install any dependencies. For understanding the code **restaurant_recommender7_labeled** has been created and this version has **modular and well commented code** for ease of understanding. This will need internet access for pulling base images from Docker.
 
