@@ -29,7 +29,9 @@ Here you will have to run a few commands to first load the base images on the do
 When you are inside the **restaurant-recommender-offline** directory run the following commands:
 
 **docker load -i python-3.8-slim.tar**
+
 **docker load -i postgres-13-alpine.tar**
+
 **docker load -i nginx-alpine.tar**
 
 These 3 commands will load the images on your docker daemon.
