@@ -10,7 +10,7 @@ Commands for checking occupied ports on Windows
 
 Go through the list thoroughly to check if all these ports are free. Thank you.
 
-**The final commits of this project are** **restaurant-recommender7 and restaurant-recommender-offline**. All other commits were done while the project was still in the development phase.
+**The final commits of this project are** **restaurant-recommender8 and restaurant-recommender-offline**. All other commits were done while the project was still in the development phase.
 
 **If you have any of the above-mentioned ports occupied and you do not want to kill the process a restaurant-recommender8 has been created which contains ports 3001,81,5001 and 5432**. These ports are generally uncommon but make sure that none of the processes on your machine are occupying these ports otherwise port issues may be caused.**Make sure port 5001 for your docker containers is also free.** **You will need internet access to run restaurant-recommender8.**
 
@@ -22,7 +22,7 @@ Clone this repository on your machine first. This will require internet access.
 
 <h3>Without Internet Access</h3>
 
-**You need git lfs(large file storage) on your system for this because offline files are much larger and hance lfs was used to upload them.**
+**You need git lfs(large file storage) on your system for this because offline files are much larger and hence lfs was used to upload them.**
 
 Use **git lfs clone** instead of **git clone** while cloning the repo.
 
@@ -48,7 +48,9 @@ After this run the following commands to get your system up and running:
 
 Visit http://localhost:3000 after this to access the UI. In this way you can run the whole system without internet access as well.
 
-<h3>With Internet Access</h3>
+<h3>With Internet Access(Recommended)</h3>
+
+This method is much simpler. You do not need git lfs in your system for this. You can clone the repository normally and it will work.
 
 Go into the command prompt and enter the **restaurant-recommender8 directory**. After you are in the directory run the command **docker-compose up --build**.  The project is plug and play and you do not have to install any dependencies. For understanding the code **restaurant_recommender7_labeled** has been created and this version has **modular and well commented code** for ease of understanding. This will need internet access for pulling base images from Docker.
 
