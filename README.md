@@ -48,6 +48,12 @@ After this run the following commands to get your system up and running:
 
 Visit http://localhost:3000 after this to access the UI. In this way you can run the whole system without internet access as well.
 
+This is an example of running the containers offline. You can see in the bottom right corner of the screenshots that we are not connected to the internet.
+
+![CommandUi1.png](https://github.com/Greyshm-Kumar/JTP_proj/blob/main/JTP_Screenshots/CommandUi1.png)
+
+![CommandUi2.png](https://github.com/Greyshm-Kumar/JTP_proj/blob/main/JTP_Screenshots/CommandUi2.png)
+
 <h3>With Internet Access(Recommended)</h3>
 
 This method is much simpler. You do not need git lfs in your system for this. You can clone the repository normally and it will work.
