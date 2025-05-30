@@ -22,7 +22,7 @@ Clone this repository on your machine first. This will require internet access.
 
 <h3>Without Internet Access(Not recommended for Mac)</h3>
 
-The reason you cannot use this on mac is because we have packaged the dependencies as wheel files in the project folder so pip does not install it using internet. Wheel files generated on Windows (my OS) are only compatible with windows OS systems. This is why we need to install dependencies on the go during build which is possible in the second method(with internet access) because there pip will automatically install the required dependencies compatible with your OS.
+The reason you cannot use this on mac is because we have packaged the dependencies as wheel files in the **wheelhouse folder** inside the **restaurant-recommender-offline/backend** folder.Therefore,pip does not install it using internet. Wheel files generated on Windows (my OS) are only compatible with windows OS systems. This is why we need to install dependencies on the go during build which is possible in the second method(with internet access) because there pip will automatically install the required dependencies compatible with your OS.
 
 **You need git lfs(large file storage) on your system for this because offline files are much larger and hence lfs was used to upload them.**
 
